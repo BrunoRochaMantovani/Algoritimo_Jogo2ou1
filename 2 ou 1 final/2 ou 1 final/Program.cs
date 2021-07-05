@@ -39,10 +39,20 @@ namespace _2_ou_1_final {
             }
             foreach (Jogador Obj in List01) {
                 Console.WriteLine("\nJOGADORES QUE ESCOLHERAM O 1: " + Obj.Nome + " ESCOLHA: " + Obj.Resultado + "\n");
+                if (List01.Count == 1) {
+                    foreach(Jogador OBJ in List01) {
+                        Console.WriteLine("O VENCEDOR É O: " + OBJ.Nome + " ESCOLHEU: "+ OBJ.Resultado);
+                    }
+                }
 
             }
             foreach (Jogador Obj in List02) {
                 Console.WriteLine("\nJOGADORES QUE ESCOLHERAM O 2: " + Obj.Nome + " ESCOLHA: " + Obj.Resultado + "\n");
+                if (List02.Count == 1) {
+                    foreach(Jogador OBJ in List02) {
+                        Console.WriteLine("O VENCEDOR É O: " + OBJ.Nome + " ESCOLHEU: " + OBJ.Resultado);
+                    }
+                }
 
             }
         }
